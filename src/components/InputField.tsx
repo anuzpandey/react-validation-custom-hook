@@ -19,7 +19,7 @@ const InputField = (props: InputFieldProps) => {
 
     const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         if (props.rules) {
-            validate(e.target.value, props.rules, props.name)
+            validate(e.target.value, props.rules, props.name, props.label)
         }
 
         props.onChange(e)
